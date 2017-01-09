@@ -1,15 +1,15 @@
 ### robot_workstation_setup
 
-This repository contains scripts that allow for end users and lab assistants to easily set up computers for ROS work after a fresh installation of Ubuntu as well as install useful packages and resources.
+Getting the scripts and making them executable
 
-The scripts in this repository are also meant for students who want to develop for the daVinci research kit.
+To run these scripts, clone cwru_scripts anywhere on your computer by typing the following in any directory: git clone https://github.com/cwru-robotics/cwru_scripts.git
 
-**EECS 376 Students**:  Please check the mobile_robotics subdirectory.
+Once you have the files, change the directory to mobile_robotics by typing: cd cwru_scripts/mobile_robotics
 
-To run a script, make sure its permissions are correct:
+After this, make the scripts executable by typing: chmod +x *.sh
+ROS Setup
 
-`chmod 755 script.sh`
+If you would like to set up a ROS installation on your own computer or Ubuntu install with all of the dependencies and programs we'll be using in the class, you can run the script install_ros_w_dep_376.sh by typing: ./install_ros_w_dep_376.sh
+Workstation Setup
 
-Then, run the script in bash:
-
-`./script.sh`
+To setup your ROS workspace (which you will have to do every time you log in to a new Jennings computer) use the setup_workspace_376.sh script. You will need to pass your github username and email as arguments to the script: ./setup_workspace_376.sh github_username github@email.com
