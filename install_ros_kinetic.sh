@@ -33,9 +33,11 @@ echo -e "\e[34m >>> Setting up rosinstall \e[39m"
 
   sudo apt-get --yes --force-yes install python-rosinstall
 
-echo -e "\e[34m >>> install gazebo-ros-pkgs \e[39m"
+echo -e "\e[34m >>> install gazebo-ros-controllers \e[39m"
 
 sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
+sudo apt-get install ros-kinetic-effort-controllers
+sudo apt-get install ros-kinetic-joint-state-controller
 
 echo -e "\e[34m >>> install sublime-text \e[39m"
 
