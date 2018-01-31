@@ -33,6 +33,21 @@ echo -e "\e[34m >>> Setting up rosinstall \e[39m"
 
   sudo apt-get --yes --force-yes install python-rosinstall
 
+echo -e "\e[34m >>> install gazebo-ros-pkgs \e[39m"
+
+sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
+
+echo -e "\e[34m >>> install sublime-text \e[39m"
+
+  sudo add-apt-repository ppa:webupd8team/sublime-text-2
+  sudo apt-get update
+  sudo apt-get install sublime-text
+
+echo -e "\e[34m >>> install git \e[39m"
+
+  sudo apt-get update
+  sudo apt-get install git
+
   source ~/.bashrc
 
 echo -e "\e[34m >>> done! \e[39m"
