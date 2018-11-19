@@ -17,7 +17,7 @@ echo -e "\e[34m >>> ...done\e[39m"
 
 echo -e "\e[34m >>> Beginning ros-kinetic-desktop-full installation...\e[39m"
 
-  sudo apt-get --yes --force-yes install ros-kinetic-desktop-full 
+  sudo apt-get --yes --force-yes install ros-kinetic-desktop-full
 
 echo -e "\e[34m >>> Setting up rosdep\e[39m"
 
@@ -38,18 +38,26 @@ echo -e "\e[34m >>> install gazebo-ros-controllers \e[39m"
 sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
 sudo apt-get install ros-kinetic-effort-controllers
 sudo apt-get install ros-kinetic-joint-state-controller
+sudo apt-get --yes --force-yes install ros-kinetic-cv-bridge ros-kinetic-polled-camera ros-kinetic-camera-info-manager ros-kinetic-tf-conversions
+sudo apt-get --yes --force-yes install ros-kinetic-opencv3 libopencv-dev
 
 echo -e "\e[34m >>> install sublime-text \e[39m"
 
-  sudo add-apt-repository ppa:webupd8team/sublime-text-2
+  sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
   sudo apt-get update
-  sudo apt-get install sublime-text
+  sudo apt-get --yes --force-yes install sublime-text-installer
 
 echo -e "\e[34m >>> install git \e[39m"
 
   sudo apt-get update
-  sudo apt-get install git
+  sudo apt-get --yes --force-yes install git
 
-  source ~/.bashrc
+echo -e "\e[1m \e[34m >>> Installing rqt \e[21m \e[39m"
+    sudo apt-get --yes install ros-kinetic-rqt
+    sudo apt-get --yes install ros-kinetic-rqt-common-plugins
+
+      source ~/.bashrc
+
+source ~/ros_ws/devel/setup.bash
 
 echo -e "\e[34m >>> done! \e[39m"
