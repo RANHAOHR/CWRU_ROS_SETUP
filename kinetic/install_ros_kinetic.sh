@@ -56,8 +56,6 @@ echo -e "\e[1m \e[34m >>> Installing rqt \e[21m \e[39m"
     sudo apt-get --yes install ros-kinetic-rqt
     sudo apt-get --yes install ros-kinetic-rqt-common-plugins
 
-      source ~/.bashrc
-
-source ~/ros_ws/devel/setup.bash
+source ~/.bashrc
 
 echo -e "\e[34m >>> done! \e[39m"
